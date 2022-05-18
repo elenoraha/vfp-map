@@ -1,0 +1,33 @@
+{
+  "name": "athentic_theme",
+  "version": "0.1.0",
+  "authors": [
+    "Elle Hamson"
+  ],
+  "description": "Authentic Theme",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "WordPress"
+  ],
+  "homepage": "http://www.authentic.org",
+  "private": true,
+  "dependencies": {
+    "susy": "^2.2.7",
+    "breakpoint-sass": "^2.7.1",
+    "featherlight": "^1.7.1",
+    "bxslider-4": "bxSlider#^4.2.15",
+    "waypoints": "^4.0.1",
+    "picturefill": "^3.0.3",
+    "lazysizes": "^4.1.4",
+    "svgxuse": "^1.2.6",
+    "DOMPurify": "^2.0.3",
+    "imagesloaded": "^4.1.4",
+    "iframe-resizer": "^4.2.9"
+  }
+}

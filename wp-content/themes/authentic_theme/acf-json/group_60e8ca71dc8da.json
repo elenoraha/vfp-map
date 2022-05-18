@@ -1,0 +1,217 @@
+{
+    "key": "group_60e8ca71dc8da",
+    "title": "Component: Text + Two Images",
+    "fields": [
+        {
+            "key": "field_60ed29ecb4e13",
+            "label": "Image Position",
+            "name": "image_position",
+            "type": "radio",
+            "instructions": "Right Aligned is the recommended format. If Left Aligned is your preference, it is recommended to not use a background image caption.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left": "Left",
+                "right": "Right"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "right",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_60e8ca71e030c",
+            "label": "Background Image",
+            "name": "image",
+            "type": "image",
+            "instructions": "This is image will appear behind the 'Featured Image'. \r\nRecommended Image Size: 1450 x 1054px",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_60e8cbd65ac36",
+            "label": "Featured Image",
+            "name": "featured_image",
+            "type": "image",
+            "instructions": "This is image is smaller and sits on top of the background image. \r\nRecommended Image Size: 784 x 594px",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_60e8ca71e0302",
+            "label": "Background Image Caption",
+            "name": "image_caption",
+            "type": "text",
+            "instructions": "Recommended Character Count: 50 characters",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60e8d5cf96025",
+            "label": "Featured Image Caption",
+            "name": "featured_image_caption",
+            "type": "text",
+            "instructions": "Recommended Character Count: 50 characters",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60e8ca71e0315",
+            "label": "Headline Type",
+            "name": "headline_type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "text": "Text",
+                "quote": "Quote"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "text",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_60e8ca71e031e",
+            "label": "Headline",
+            "name": "headline",
+            "type": "wysiwyg",
+            "instructions": "Recommended Character Count: 130 characters",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_60e8ca71e0326",
+            "label": "Description",
+            "name": "description",
+            "type": "wysiwyg",
+            "instructions": "Recommended Character Count: 450 characters",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_60e8ca71e032e",
+            "label": "Link",
+            "name": "cta_link",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_5cf03b96dae67"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "modified": 1631632689
+}

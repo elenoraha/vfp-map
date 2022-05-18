@@ -1,0 +1,109 @@
+{
+    "key": "group_60a58ae6b61e4",
+    "title": "Component: Multi Column Image",
+    "fields": [
+        {
+            "key": "field_60a58b0ac9345",
+            "label": "Images",
+            "name": "images",
+            "type": "repeater",
+            "instructions": "Max of 3 images per row \/\/\r\n(For 2-Image Rows): Recommended Image Size for each: 2040 x 1622px \/\/ \r\n(For 3-Image Rows): Recommended Image Size for each: 1380 x 1156px",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 1,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Image Row",
+            "sub_fields": [
+                {
+                    "key": "field_60a58b5ac9346",
+                    "label": "Image Row",
+                    "name": "image_row",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 2,
+                    "max": 3,
+                    "layout": "table",
+                    "button_label": "Add Image",
+                    "sub_fields": [
+                        {
+                            "key": "field_60a58bc0c9348",
+                            "label": "Image",
+                            "name": "image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_60a58bc9c9349",
+                            "label": "Image Caption",
+                            "name": "image_caption",
+                            "type": "textarea",
+                            "instructions": "Recommended Character Count: 120 characters",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 4,
+                            "new_lines": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "modified": 1631822939
+}

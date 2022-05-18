@@ -1,0 +1,85 @@
+{
+    "key": "group_5cf03b96dae67",
+    "title": "Field: Link",
+    "fields": [
+        {
+            "key": "field_5cf03b9fd9763",
+            "label": "Link",
+            "name": "link",
+            "type": "link",
+            "instructions": "Recommended Character Count: 10 characters",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_5cf03bdad9764",
+            "label": "Add ADA Label?",
+            "name": "ada_toggle",
+            "type": "true_false",
+            "instructions": "If the purpose of the link is not apparent from the link text alone you need to add a more thorough label for screen readers.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5cf03c5dd9765",
+            "label": "ADA Label",
+            "name": "ada_label",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5cf03bdad9764",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "modified": 1631742669
+}

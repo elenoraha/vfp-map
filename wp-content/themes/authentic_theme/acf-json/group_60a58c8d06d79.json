@@ -1,0 +1,64 @@
+{
+    "key": "group_60a58c8d06d79",
+    "title": "Component: Small Callout Link",
+    "fields": [
+        {
+            "key": "field_60a58c9d62896",
+            "label": "Headline",
+            "name": "scl_headline",
+            "type": "text",
+            "instructions": "Recommended Character Count: 60 characters",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60a58ca462897",
+            "label": "CTA Link",
+            "name": "scl_link",
+            "type": "clone",
+            "instructions": "Select \"Open in new tab\" option for external links",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_5cf03b96dae67"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "modified": 1631822867
+}

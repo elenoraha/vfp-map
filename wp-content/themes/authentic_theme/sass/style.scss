@@ -1,0 +1,17 @@
+/*
+Theme Name: Authentic Theme
+Author: Elle
+Version: 1.0
+Text Domain: authentic_theme
+Tags:
+
+*/
+@import "../bower_components/susy/sass/susy";
+@import "../bower_components/breakpoint-sass/stylesheets/breakpoint";
+@import 'global_variables',
+	'main',
+	'header',
+	'topper',
+	'footer',
+	'map',
+	'singleState';

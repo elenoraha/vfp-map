@@ -1,0 +1,232 @@
+{
+    "key": "group_60f09cc3c5dc7",
+    "title": "Post: News",
+    "fields": [
+        {
+            "key": "field_60f09e8e22b2e",
+            "label": "Headline",
+            "name": "headline",
+            "type": "text",
+            "instructions": "Recommended character count: 70 characters",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60f09cd022b2d",
+            "label": "Source",
+            "name": "source",
+            "type": "text",
+            "instructions": "Enter the name of source or the type of news article. Recommended Character Count: 50 characters",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60f0abcea1804",
+            "label": "Date Posted",
+            "name": "date_posted",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y",
+            "return_format": "F j, Y",
+            "first_day": 1
+        },
+        {
+            "key": "field_60f0abf5a1805",
+            "label": "Author",
+            "name": "author",
+            "type": "text",
+            "instructions": "Recommended Character Count: 50 characters",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60f0a237563d2",
+                        "operator": "==",
+                        "value": "original"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60f0a237563d2",
+            "label": "Is post original content or from an external source?",
+            "name": "original_or_external",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "original": "Original",
+                "external": "External Source"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "original",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_60f09e9d22b2f",
+            "label": "External Source Link",
+            "name": "external_source_link",
+            "type": "clone",
+            "instructions": "Select \"Open in a new tab\" option for external links when adding a new link below",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60f0a237563d2",
+                        "operator": "==",
+                        "value": "external"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_5cf03b96dae67"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_60f09ef322b30",
+            "label": "Automatically take user to external source?",
+            "name": "automatically_take_user_to_external_source",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60f0a237563d2",
+                        "operator": "==",
+                        "value": "external"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "yes",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_60f0a01322b31",
+            "label": "Content",
+            "name": "news_article_content",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60f09ef322b30",
+                        "operator": "==",
+                        "value": "no"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_60f0a237563d2",
+                        "operator": "==",
+                        "value": "original"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_60f0a0e793384"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "news"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "discussion",
+        "comments"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1644948292
+}

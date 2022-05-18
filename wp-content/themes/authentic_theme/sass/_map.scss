@@ -1,0 +1,297 @@
+.map-usa {
+	background-color: $c-primaryLight;
+	padding: 6.25rem 0;
+	padding-bottom: 12vw;
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+
+	@include breakpoint($bp-small) {
+		padding: 3.25rem 0;
+	}
+	&--top_row {
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 50vw;
+			width: 50vw;
+			height: 50px;
+			border-bottom: 35px dotted white;
+			border-bottom-style: dotted;
+
+			@include breakpoint($bp-medium-down) {
+				right: auto;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+	&--description {
+		@include fs(20px, 28px);
+		padding-left: 4rem;
+
+		@include breakpoint($bp-medium-down) {
+			padding-left: 0;
+		}
+
+		@include breakpoint($bp-small) {
+			margin-bottom: 1.5rem;
+		}
+
+		:first-child {
+			margin-top: 0;
+		}
+	}
+
+	&--title-wrapper {
+		text-align: center;
+		margin-left: auto;
+		position: relative;
+		padding-bottom: 65px;
+		max-width: 480px;
+
+		@include breakpoint($bp-medium-down) {
+			margin-bottom: 2rem;
+			max-width: 100%;
+		}
+	}
+
+	&--state-title {
+		text-transform: uppercase;
+		font-weight: 800;
+		color: $c-primaryDark;
+		@include fs(24px, 32px);
+	}
+
+	&--election-date {
+		font-size: 1rem;
+		margin-top: 0;
+		max-width: 250px;
+		margin: 0 auto 1rem;
+	}
+
+	&--states {
+		transform: scale(1.2);
+		transform-origin: top left;
+		position: relative;
+		z-index: 1;
+
+		@include breakpoint($bp-large-down) {
+			transform: scale(1);
+		}
+
+		@include breakpoint($bp-medium-down) {
+			
+		}
+
+		@include fluid-prop("padding-top", 32px, 80px);
+
+		svg {
+			width: 100%;
+			height: auto;
+		}
+
+		a path {
+			transition: 0.3s all;
+		}
+
+		a[class*="link-state"] {
+			position: relative;
+		}
+
+		a[class*="link-state"]:hover *,
+		a[class*="link-state"]:focus * {
+			fill: black;
+		}
+	}
+
+	&--states-data {
+	}
+
+	&--key-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		max-width: 350px;
+		margin-left: auto;
+		text-align: right;
+		margin-top: 3rem;
+	}
+
+	&--key-title {
+		font-size: 17px;
+		font-weight: 800;
+		padding-left: 6rem;
+
+		@include breakpoint($bp-small) {
+			font-size: 15px;
+		}
+	}
+
+	&--key-ornament {
+		margin-top: -2.7rem;
+		width: 100%;
+		height: auto;
+		max-width: 320px;
+		pointer-events: none;
+		margin-bottom: 1.8rem;
+	}
+
+	&--key-description {
+		font-size: 1rem;
+		max-width: 270px;
+		line-height: 1.2;
+		color: $c-primary;
+
+        @include breakpoint($bp-medium-down){
+          display: none;
+        }
+        
+	}
+
+	&--states-mobile {
+		display: flex;
+		align-items: center;
+		margin: 3rem auto;
+		max-width: 400px;
+
+		@include breakpoint($bp-small) {
+			flex-direction: column;
+		}
+
+        @include breakpoint($bp-large){
+          display: none;
+        }
+        
+	}
+
+	&--mobile-description {
+		margin-right: 1rem;
+		text-transform: uppercase;
+		font-weight: 800;
+		color: $c-primary;
+		font-family: $ff-primary;
+
+		@include breakpoint($bp-small) {
+			margin-right: 0;
+			margin-bottom: 1rem;
+		}
+	}
+
+	&--mobile-select {
+		background: white;
+		border: 1px solid $c-primary;
+		box-sizing: border-box;
+		border-radius: 50px;
+		padding: 0.8rem 1.2rem;
+		font-size: 18px;
+		appearance: none;
+		position: relative;
+		background-image: var(--icon-arrow-down);
+		width: 100%;
+		background-repeat: no-repeat;
+		background-position: center right 16px;
+		flex-basis: 0;
+		flex-grow: 1;
+		min-width: 0;
+		max-width: 100%;
+		color: $c-primaryDark;
+	}
+	&--map_row {
+		.col-candidates{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+		}
+	}
+	.row-title,
+	&--top_row,
+	&--map_row {
+		.col-6 {
+			@include breakpoint($bp-medium-down) {
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+.tooltip-container {
+	position: absolute;
+	display: none;
+	padding: 0.5rem;
+	background: rgba(255, 255, 255, 0.9);
+	font-size: 1rem;
+	color: $c-primaryDark;
+	border-radius: 5px;
+	z-index: 5;
+}
+
+.cadidate-item {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-top: 1.5rem;
+
+	@include breakpoint($bp-large-down) {
+		justify-content: center;
+	}
+
+	&--title-wrapper {
+		text-align: center;
+		padding-right: 1rem;
+	}
+
+	&--title {
+		color: $c-primaryDark;
+		@include fs(18px, 23px);
+	}
+
+	&--election-year {
+		font-size: 12px;
+		text-transform: uppercase;
+		font-weight: 800;
+		font-family: $ff-primary;
+		padding: 0.8rem 0.5rem;
+		border-radius: $bt-borderRadius;
+		color: white;
+		width: 170px;
+		margin: 0 auto;
+
+		@include breakpoint($bp-small) {
+			font-size: 10px;
+			padding: 0.5rem 0.5rem;
+			width: 140px;
+		}
+	}
+
+	&--image-wrapper {
+		width: 30%;
+		@include breakpoint($bp-small) {
+			max-width: 45%;
+		}
+	}
+
+	&--image {
+		width: 100%;
+		height: auto;
+		max-width: 230px;
+		border-radius: 100%;
+	}
+}
+
+[data-has-active-election="false"] {
+	display: none;
+}
+
+.col-candidates,
+.col-current-senators{
+	display: flex;
+	flex-direction: column;
+	@include breakpoint($bp-small){
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}

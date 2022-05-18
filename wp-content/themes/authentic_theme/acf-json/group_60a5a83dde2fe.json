@@ -1,0 +1,62 @@
+{
+    "key": "group_60a5a83dde2fe",
+    "title": "Component: Large Quote",
+    "fields": [
+        {
+            "key": "field_60a5a84d801a3",
+            "label": "Quote",
+            "name": "quote",
+            "type": "textarea",
+            "instructions": "Recommended Character Count: 150 characters",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
+        },
+        {
+            "key": "field_60a5a867801a4",
+            "label": "Attribution",
+            "name": "attribution",
+            "type": "text",
+            "instructions": "Recommend Character Count: 50 characters",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "modified": 1631742098
+}

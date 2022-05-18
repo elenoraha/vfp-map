@@ -1,0 +1,113 @@
+.state {
+    background: $c-primaryLight;
+    padding: 5rem 0;
+    overflow: hidden;
+
+    &--map {
+        text-align: center;
+        margin-top: -7vw;
+        @include breakpoint($bp-medium-down){
+            margin-top: 0;
+        }
+        @include breakpoint($bp-xlarge){
+            margin-top: -100px;
+        }
+    }
+    &--map-link{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    &--img {
+        width: 70%;
+        height: auto;
+        max-height: 600px;
+        object-fit: contain;
+        margin: 0 auto;
+        display: block;
+    }
+    &--description {
+        padding-left: 3rem;
+        @include fs(18px, 28px);
+        @include breakpoint($bp-small) {
+            padding-left: 0;
+        }
+
+    }
+    &--candidates-title{
+        color: $c-primaryDark;
+        text-align: center;
+        @include breakpoint($bp-small){
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+    }
+
+    &--current-senators {}
+
+    &--candidates {}
+
+    .cadidate-item {
+        justify-content: center;
+    }
+
+    .map-usa--title-wrapper {
+        max-width: 50%;
+
+        @include breakpoint($bp-medium-down) {
+            max-width: 100%;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50vw;
+            height: 50px;
+            border-bottom: 35px dotted white;
+            border-bottom-style: dotted;
+
+            @include breakpoint($bp-medium-down) {
+                right: auto;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+
+.col-current-senators {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 2px;
+        height: calc(100% - 3rem);
+        background: $c-primary;
+        transform: translateY(-50%);
+
+        @include breakpoint($bp-small) {
+            width: 0;
+            height: 0;
+        }
+
+    }
+}
+
+.row-candidates{
+    @include mt(0px, 80px);
+    justify-content: center;
+
+    &[data-has-candidates="false"]{
+        .col-candidates{
+            display: none;
+        }
+
+        .col-current-senators::before{
+            display: none;
+        }
+    }
+}

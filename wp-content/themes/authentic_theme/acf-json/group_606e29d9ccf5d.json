@@ -1,0 +1,83 @@
+{
+    "key": "group_606e29d9ccf5d",
+    "title": "Component: Donations",
+    "fields": [
+        {
+            "key": "field_606e29e283d93",
+            "label": "Headline",
+            "name": "headline",
+            "type": "text",
+            "instructions": "Max Character Count: 40",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": 40
+        },
+        {
+            "key": "field_606e2ad8cd6ab",
+            "label": "Description",
+            "name": "description",
+            "type": "textarea",
+            "instructions": "Max Character Count: 100",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": 100,
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_606e2a3f83d95",
+            "label": "Donations",
+            "name": "donations",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_605bbf235f29d"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "modified": 1625734037
+}

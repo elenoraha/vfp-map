@@ -1,0 +1,28 @@
+#databases
+*.sql
+ 
+/**/node_modules/
+/**/bower_components
+/**/.sass-cache/
+
+*~
+.DS_Store
+.svn
+.cvs
+*.bak
+*.swp
+Thumbs.db
+*/**/npm-debug.log
+
+*.htaccess
+
+
+# VSCODE
+*.code-workspace
+*.vscode
+
+# ONLY DEV
+all-in-one-wp-migration
+ai1wm-backups
+local-by-flywheel-live-link-helper.php
+be-media-from-production

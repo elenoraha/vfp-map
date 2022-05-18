@@ -1,0 +1,620 @@
+// CONTENT
+// This file contains all non printing styles other than layout.
+//
+
+
+/* ●●● FONTS
+❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱ */
+
+/* ● Fonts ❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱ */
+
+//headings, buttons, featured text
+$ff-primary: 'Inter', sans-serif; //"Oswald", Helvetica, Arial, sans-serif;
+//body, forms
+$ff-secondary:'nunito-sans', sans-serif; //"Montserrat", sans-serif;
+
+/* ● Font sizes ❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱ */
+
+$fs-base: 16px;
+$fs-large: 52px;
+$fs-small: 15px;
+$fs-baseMobile: 16px;
+$fs-largeMobile: 34px;
+$fs-smallMobile: 12px;
+$fs-h1: 72px;
+$fs-h2: 40px;
+$fs-h3: 34px;
+$fs-h4: 28px;
+$fs-h5: 24px;
+$fs-h1Mobile: 56px;
+$fs-h2Mobile: 30px;
+$fs-h3Mobile: 24px;
+$fs-h4Mobile: 20px;
+$fs-h5Mobile: 19px;
+$fs-featureText: 52px;
+$fs-featureTextMobile: 34px;
+$fs-button: 20px;
+$fs-buttonMobile: 15px;
+
+/* ● Font weights ❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱ */
+
+$fw-bold: 800;
+$fw-semiBold: 700;
+$fw-regular: 400;
+
+/* ●●● COLORS
+❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱ */
+
+
+/* ● Primary Colors ❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱ */
+
+$c-primary: #2487BE; //Blue 1
+$c-primaryMed:#2487BE;
+$c-primaryDark: #083053;//Navy blue
+$c-primaryLight: #E2E9F0; //Sky Blue
+
+/* ● Secondary Colors ❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱ */
+
+$c-secondary: #ffffff;
+
+$c-secondaryMed: #4D9FCC; //Blue 2
+$c-secondaryDark: #072A49; //Dark Navy
+$c-secondaryLight: #FFFFFF; //White
+
+/* ● Text Colors ❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱ */
+
+$c-darkText: $c-primaryDark;
+$c-lightText: $c-primaryLight;
+$c-heading: $c-primaryDark;
+
+/* ● Basic colors ❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱ */
+
+$c-white: #FFFFFF;
+$c-black: $c-primaryDark;
+
+/* ● Background Variables ❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱ */
+
+$bg-light: $c-secondaryMed;
+$bg-med: $c-primaryMed;
+$bg-dark: $c-primary;
+$bg-body: $c-primaryLight;
+
+/* ●●● CONTAINERS SIZES
+❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱ */
+
+$s-padding: 30px;
+$s-small_max_width: 990px;
+$s-max_width: 2000px;
+$s-inner_max_width: 1320px;
+$s-narrow_width: 619px;
+$s-base_font_weight: $fw-regular;
+// Breakpoint Settings
+$susy: (gutters: 20/20,
+	gutter-position: before);
+$bp-small: max-width 700px;
+$bp-medium: 701px 924px;
+$bp-medium-up: 701px;
+$bp-medium-down: 0px 924px;
+$bp-large: 925px;
+$bp-large-down: 0 1250px;
+$bp-xlarge: 1251px;
+
+/* ●●● MIXINGS
+❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱ */
+
+
+/* ● Responsive properties ❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱ */
+
+@function strip-unit($value) {
+	@return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-prop-base($props, $min-prop-size, $max-prop-size, $min-vw, $max-vw) {
+	// https://css-tricks.com/snippets/css/fluid-typography/
+	$u1: unit($min-vw);
+	$u3: unit($min-prop-size);
+	$u4: unit($max-prop-size);
+
+	@if $u1==$u3 and $u1==$u4 {
+		& {
+			@each $prop in $props {
+				#{$prop}: $min-prop-size;
+			}
+
+			@media screen and (min-width: $min-vw) {
+				@each $prop in $props {
+					#{$prop}: calc(#{$min-prop-size} + #{strip-unit($max-prop-size - $min-prop-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+				}
+			}
+
+			@media screen and (min-width: $max-vw) {
+				@each $prop in $props {
+					#{$prop}: $max-prop-size;
+				}
+			}
+		}
+	}
+
+	@else {
+		@warn 'All sizes in fluid-prop() must use px for unit.';
+	}
+}
+
+@mixin fluid-prop($prop, $min-prop-size, $max-prop-size) {
+	@include fluid-prop-base($prop, $min-prop-size, $max-prop-size, 661px, 1400px);
+}
+
+@mixin fluid-prop-small($prop, $min-prop-size, $max-prop-size) {
+	@include fluid-prop-base($prop, $min-prop-size, $max-prop-size, 0px, 660px);
+}
+
+@mixin fluid-prop-large($prop, $min-prop-size, $max-prop-size) {
+	@include fluid-prop-base($prop, $min-prop-size, $max-prop-size, 1280px, 1400px);
+}
+
+@mixin fs($min-prop-size, $max-prop-size) {
+	@include fluid-prop-base('font-size', $min-prop-size, $max-prop-size, 661px, 1400px);
+}
+
+@mixin pt($min-prop-size, $max-prop-size) {
+	@include fluid-prop-base('padding-top', $min-prop-size, $max-prop-size, 661px, 1400px);
+}
+
+@mixin pb($min-prop-size, $max-prop-size) {
+	@include fluid-prop-base('padding-bottom', $min-prop-size, $max-prop-size, 661px, 1400px);
+}
+
+@mixin pl($min-prop-size, $max-prop-size) {
+	@include fluid-prop-base('padding-left', $min-prop-size, $max-prop-size, 661px, 1400px);
+}
+
+@mixin pr($min-prop-size, $max-prop-size) {
+	@include fluid-prop-base('padding-right', $min-prop-size, $max-prop-size, 661px, 1400px);
+}
+
+@mixin mt($min-prop-size, $max-prop-size) {
+	@include fluid-prop-base('margin-top', $min-prop-size, $max-prop-size, 661px, 1400px);
+}
+
+@mixin mb($min-prop-size, $max-prop-size) {
+	@include fluid-prop-base('margin-bottom', $min-prop-size, $max-prop-size, 661px, 1400px);
+}
+
+@mixin ml($min-prop-size, $max-prop-size) {
+	@include fluid-prop-base('margin-left', $min-prop-size, $max-prop-size, 661px, 1400px);
+}
+
+@mixin mr($min-prop-size, $max-prop-size) {
+	@include fluid-prop-base('margin-right', $min-prop-size, $max-prop-size, 661px, 1400px);
+}
+
+/* ● Containers ❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱ */
+
+
+@mixin fluid_width_narrow {
+	@include fluid-prop-large('max-width', $s-narrow_width, $s-small_max_width);
+}
+
+@mixin fluid_width_regular {
+	@include fluid-prop('padding-left', 0px, $s-padding*6);
+	@include fluid-prop('padding-right', 0px, $s-padding*6);
+}
+
+@mixin fluid_width_homepage {
+	@include fluid-prop('padding-left', 0px, $s-padding*3);
+	@include fluid-prop('padding-right', 0px, $s-padding*3);
+}
+
+@mixin fluid_width_media {
+	@include fluid-prop('padding-left', 0px, $s-padding*12);
+	@include fluid-prop('padding-right', 0px, $s-padding*12);
+}
+
+@mixin fluid_width_wide {
+	@include fluid-prop('padding-left', 0px, $s-padding);
+	@include fluid-prop('padding-right', 0px, $s-padding);
+}
+
+@mixin max_site_width {
+	max-width: $s-max_width;
+	margin: 0 auto;
+}
+
+/* ● Texts ❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱ */
+
+@mixin fluid_font_base {
+	font-size: $fs-base;
+	line-height: 1.75;
+	@include fs($fs-baseMobile, $fs-base);
+
+}
+
+@mixin fluid_font_small {
+	font-size: $fs-small;
+	line-height: 1.7;
+	letter-spacing: 0.01em;
+	@include fs($fs-smallMobile, $fs-small);
+
+	@include breakpoint($bp-small) {
+		font-size: 13px;
+	}
+}
+
+@mixin h1 {
+	margin-bottom: 0.1em;
+	margin-top: 0.2em;
+	@include fs($fs-h1Mobile, $fs-h1);
+}
+
+@mixin h2 {
+	font-family: $ff-primary;
+	font-size: $fs-h2;
+	font-weight: 600;
+	line-height: 1.3;
+	@include fs($fs-h2Mobile, $fs-h2);
+
+	@include breakpoint($bp-small) {
+		font-size: 33px;
+	}
+}
+
+@mixin h3 {
+	font-family: $ff-primary;
+	font-size: $fs-h3;
+	font-weight: $fw-bold;
+	line-height: 1.35;
+	@include fs($fs-h3Mobile, $fs-h3);
+}
+
+@mixin h4 {
+	font-family: $ff-primary;
+	font-size: $fs-h4;
+	font-weight: $fw-bold;
+	line-height: 1.4;
+	@include fs($fs-h4Mobile, $fs-h4);
+}
+
+@mixin h5 {
+	font-family: $ff-primary;
+	font-size: $fs-h5;
+	font-weight: $fw-bold;
+	line-height: 1.3;
+	@include fs($fs-h5Mobile, $fs-h5);
+}
+
+/* ●●● BUTTONS
+❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱ */
+
+$bt-borderRadius: 50px;
+$bt-boxShadow: 0px 0px 0px transparent;
+
+@mixin button_base {
+	border-radius: $bt-borderRadius;
+	// box-shadow: $bt-boxShadow;
+	display: inline-block;
+	font-family: $ff-primary;
+	font-weight: $fw-bold;
+	font-size: 14px;
+	letter-spacing: 0.04em;
+	padding: 10px 40px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	transition: background 0.5s ease, color 0.5s ease, border 0.5s ease;
+	color: white;
+	cursor: pointer;
+
+	&:hover,
+	&:active,
+	&:focus {
+		text-decoration: none;
+		transition: background 0.5s ease, color 0.5s ease, border 0.5s ease;
+	}
+
+	@include breakpoint($bp-small) {
+		font-size: 13px;
+	}
+
+	// @include breakpoint($bp-medium) {
+	// 	font-size: 14px;
+	// }
+}
+
+@mixin button_primary {
+	@include button_base;
+	background: $c-primary;
+	color: white;
+	border: 2px solid $c-primary;
+
+	&:focus {
+		box-shadow: $c-secondary 0 0 0.5em;
+		outline: none;
+	}
+
+	&:hover,
+	&:focus {
+		color: white;
+		background: $c-primaryDark;
+		border-color: $c-primaryDark;
+	}
+}
+
+@mixin button_secondary {
+	@include button_base;
+	background: $c-primaryDark; //formerly $c-primary
+	color: white;
+	border: 2px solid $c-primaryDark;
+
+	&:focus {
+		box-shadow: $c-primary 0 0 0.5em;
+		outline: none;
+	}
+
+	&:hover,
+	&:focus {
+		background: $c-primary;
+		border-color: $c-primary;
+		color: white!important;
+	}
+}
+
+
+@mixin button_white{
+	@include button_base;
+	background: white; //formerly $c-primary
+	color: $c-primaryDark;
+	border: 2px solid white;
+
+	&:focus {
+		box-shadow: $c-primary 0 0 0.5em;
+		outline: none;
+	}
+
+	&:hover,
+	&:focus {
+		background: $c-primaryDark;
+		border-color: white;
+		color: white;
+	}
+}
+
+//donate light blue
+@mixin button_accent {
+	@include button_base;
+	background: $c-primaryMed;
+	box-shadow: none;
+	color: $c-darkText;
+	border: 2px solid $c-primaryMed;
+
+	&:focus {
+		box-shadow: $c-secondary 0 0 0.5em;
+		outline: none;
+	}
+
+	&:hover,
+	&:active,
+	&:focus {
+		background: $c-secondary;
+		border-color: $c-secondary;
+	}
+}
+
+@mixin button_link_base {
+	@include fluid_font_base;
+	background: transparent;
+	color: $c-darkText;
+	border: none;
+	border-bottom: 2px solid $c-secondary;
+	transition: border 0.5s ease, color 0.5s ease;
+	position: relative;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 15px;
+	display: inline-block;
+
+	&:hover,
+	&:active,
+	&:focus {
+		background: transparent;
+		border-bottom: 2px solid $c-primary;
+
+		&:link,
+		&:visited,
+		a:link,
+		a:visited {
+			background: transparent;
+			//color: $c-primaryDark;
+			text-decoration: none;
+			border-bottom: 2px solid $c-primaryMed; //formerly $c-primary
+			transition: border 0.5s ease, color 0.5s ease;
+		}
+	}
+
+	&:link,
+	&:visited,
+	a:link,
+	a:visited {
+		border-bottom: 2px solid $c-secondary;
+		color: $c-darkText;
+		text-decoration: none;
+		transition: border 0.5s ease, color 0.5s ease;
+
+		p & {
+			text-decoration: none;
+		}
+	}
+
+	&:focus {
+		box-shadow: none;
+		border-bottom-color: $c-primary;
+		outline: none;
+	}
+
+	.component__bg_dark & {
+		border-bottom-color: $c-secondaryMed;
+	}
+}
+
+@mixin button_link_internal {
+	@include button_link_base;
+}
+
+@mixin button_link_external {
+	@include button_link_base;
+	padding-right: 25px;
+
+	&:after {
+		content: '';
+		height: 20px;
+		width: 20px;
+		position: absolute;
+		right: 0px;
+		top: 6px;
+		background-image: url(images/more-external-site.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	.component__bg_dark & {
+		&:after {
+			background-image: url(images/more-external-site-white.svg);
+		}
+	}
+}
+
+@mixin no_button_style {
+	background: transparent;
+	border: none;
+	box-shadow: none;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background: none;
+		border: none;
+		box-shadow: none;
+	}
+}
+
+/* ●●● ANIMATIONS
+❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱❱ */
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes slideInFromLeft {
+	0% {
+		transform: translateX(-100%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInFromRight {
+	0% {
+		transform: translateX(100%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInFromTop {
+	0% {
+		transform: translateY(-100%);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideInFromBottom {
+	0% {
+		transform: translateY(100%);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes shakeY {
+
+	0%,
+	to {
+		transform: translateZ(0)
+	}
+
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translate3d(0, -10px, 0)
+	}
+
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translate3d(0, 10px, 0)
+	}
+}
+
+@keyframes shakeX {
+
+	0%,
+	to {
+		transform: translateZ(0)
+	}
+
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translate3d(-10px, 0, 0)
+	}
+
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translate3d(10px, 0, 0)
+	}
+}
+
+@keyframes slideInFromLeftWithOpacity {
+	0% {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+
+	50%{
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@mixin hover {
+
+	&:not([disabled]):hover,
+	&:not([disabled]):focus {
+		@content;
+	}
+}

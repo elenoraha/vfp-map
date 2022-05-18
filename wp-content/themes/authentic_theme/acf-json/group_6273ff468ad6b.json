@@ -1,0 +1,158 @@
+{
+    "key": "group_6273ff468ad6b",
+    "title": "Donation Bar Settings",
+    "fields": [
+        {
+            "key": "field_6273ff468e263",
+            "label": "Donation Bar",
+            "name": "donation_bar",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6273ff4690011",
+                    "label": "Turn on donation bar?",
+                    "name": "turn_on_donation_bar",
+                    "type": "true_false",
+                    "instructions": "This is a fixed slide-up donation bar on the homepage.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_6273ff469001a",
+                    "label": "Slide Up Delay",
+                    "name": "slide_up_delay",
+                    "type": "number",
+                    "instructions": "Enter the numbers of seconds you want the donations bar to wait before sliding into view.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "seconds",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                },
+                {
+                    "key": "field_6273ff4690022",
+                    "label": "Donation Fields",
+                    "name": "donation_fields",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6273ff46942fc",
+                            "label": "Headline",
+                            "name": "bar_headline",
+                            "type": "text",
+                            "instructions": "Max character limit: 25",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": 25
+                        },
+                        {
+                            "key": "field_6273ff4694305",
+                            "label": "Description",
+                            "name": "bar_description",
+                            "type": "text",
+                            "instructions": "Max character limit: 70",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": 70
+                        },
+                        {
+                            "key": "field_6273ff4694311",
+                            "label": "Actblue Fields",
+                            "name": "actblue_fields",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_605bbf235f29d"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "options-en"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1651769489
+}
